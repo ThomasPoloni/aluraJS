@@ -1,157 +1,153 @@
-*{
-	box-sizing: border-box;
- }
-
-body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+* {
+    box-sizing: border-box;
 }
 
-header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
-	margin-bottom: 1em;
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
-header h1{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-
-header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
+header {
+    background-color: #333;
+    height: 3em;
+    color: #FFF;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container{
-	width: 60%;
-	height: 100%;
-	margin: 0 auto;
-	margin-top: 50px;
+header h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
 }
 
-.container-form{
-	width: 60%;
-	height: 100%;
-	margin: 0 auto;
-	margin-top: 50px;
+.container-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-section{
-	margin: 2em 0;
-	overflow: hidden;
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
-table{
-	width: 100%;
-	margin-bottom : .5em;
+.container-form {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+section {
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    margin-bottom: .5em;
     table-layout: fixed;
-
 }
 
 td, th {
-	padding: .7em;
-	margin: 0;
-	border: 1px solid #ccc;
-	text-align: center;
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-th{
-	font-weight: bold;
-	background-color: #EEE;
+th {
+    font-weight: bold;
+    background-color: #EEE;
 }
 
-label{
-	color: #555;
-	display: block;
-	margin-bottom: .2em;
+label {
+    color: #555;
+    display: block;
+    margin-bottom: .2em;
 }
 
-.campo{
-	margin: 0;
-	padding-bottom: 1em;
-	width: 100%;
-	border: 1px solid #ccc;
-	padding: .7em;
-	width: 100%;
+.campo {
+    margin: 0;
+    padding-bottom: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: .7em;
 }
 
-.campo-medio{
-	display: inline-block;
-	padding-right: .5em;
+.campo-medio {
+    display: inline-block;
+    padding-right: .5em;
 }
 
-.grupo{
-	width: 33.1%;
-	display: inline-block;
-	padding: 10px 0px;
+.grupo {
+    width: 33.1%;
+    display: inline-block;
+    padding: 10px 0px;
 }
 
-.grupo-grande{
-	width: 100%;
-	display: inline-block;
-	padding: 10px 0px;
+.grupo-grande {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
 }
 
-button{
-	padding: .5em 2em;
-	border: 0;
-	border-bottom: 3px solid;
-	font-size: 1.2em;
-	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
-	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
-	width: 20%;
+button {
+    padding: .5em 2em;
+    border: 0;
+    border-bottom: 3px solid;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    margin-top: -3px;
+    color: #fff;
+    background-color: #0c8cd3;
+    border-color: #04324c;
+    width: 20%;
     display: block;
     clear: both;
     margin: 10px 0px;
-
 }
 
-button:active{
-	margin-top:0px;
-	border: 0;
+button:active {
+    margin-top: 0px;
+    border: 0;
 }
 
 button[disabled=disabled], button:disabled {
     background-color: gray;
-	border-color: darkgray;
-
+    border-color: darkgray;
 }
 
-.adicionar-paciente{
+.adicionar-paciente {
     margin-top: 30px;
 }
 
-.campo-invalido{
-	border: 1px solid red;
+.campo-invalido {
+    border: 1px solid red;
 }
 
-.linha-invalida{
-	background-color: crimson;
+.linha-invalida {
+    background-color: crimson;
 }
+
 .error-message {
-    margin-top: 8px; /* Adiciona espaçamento acima do span */
-    display: block; /* Faz o span ocupar a largura total */
-	color: red;
+    margin-top: 8px;
+    display: block;
+    color: red;
 }
 
 .acoes {
     text-align: center;
-    display: flex; /* Para alinhar os itens em linha */
-    justify-content: center; /* Para garantir que os ícones fiquem centralizados */
+    display: flex;
+    justify-content: center;
 }
 
 .acoes button {
@@ -159,15 +155,15 @@ button[disabled=disabled], button:disabled {
     background: none;
     cursor: pointer;
     font-size: 18px;
-    margin: 0 5px; /* Espaçamento entre os ícones */
+    margin: 0 5px;
 }
 
 .acoes .editar {
-    color: #007BFF; /* Azul */
+    color: #007BFF;
 }
 
 .acoes .excluir {
-    color: #FF4D4D; /* Vermelho */
+    color: #FF4D4D;
 }
 
 .acoes button:hover {
@@ -177,16 +173,16 @@ button[disabled=disabled], button:disabled {
 .titulo-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o título e o botão */
+    gap: 10px;
     margin-bottom: 1em;
-    border-bottom: 1px solid #ccc; /* Linha abaixo do título */
+    border-bottom: 1px solid #ccc;
     padding-bottom: 0.5em;
 }
 
 .titulo-container h2 {
-	font-size: 3em;
-	display: block;
-    flex-grow: 1; 
+    font-size: 3em;
+    display: block;
+    flex-grow: 1;
 }
 
 .titulo-container button {
@@ -207,9 +203,9 @@ button[disabled=disabled], button:disabled {
 
 .botao-container {
     display: flex;
-    justify-content: flex-end; /* Alinha os botões à direita */
-    gap: 10px; /* Espaço entre os botões */
-    margin-top: 20px; /* Espaço acima dos botões */
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .botao {
