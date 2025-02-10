@@ -51,14 +51,6 @@ section{
 	overflow: hidden;
 }
 
-section h2{
-	font-size: 3em;
-	display: block;
-	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: .5em;
-}
-
 table{
 	width: 100%;
 	margin-bottom : .5em;
@@ -180,4 +172,61 @@ button[disabled=disabled], button:disabled {
 
 .acoes button:hover {
     opacity: 0.7;
+}
+
+.titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o título e o botão */
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc; /* Linha abaixo do título */
+    padding-bottom: 0.5em;
+}
+
+.titulo-container h2 {
+	font-size: 3em;
+	display: block;
+    flex-grow: 1; 
+}
+
+.titulo-container button {
+    width: auto;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    background-color: #0c8cd3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.titulo-container button:hover {
+    background-color: #097bb8;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.botao {
+    padding: .5em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid;
+}
+
+.bto-principal {
+    background-color: #0c8cd3;
+    border-color: #04324c;
+}
+
+.bto-secundario {
+    background-color: gray;
+    border-color: darkgray;
 }

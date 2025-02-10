@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aparecida Nutrição</title>
+    <title>Aparecida Nutrição - Pacientes</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
     <header>
         <div class="container-header">
-            <nav>
-                <ul class="menu">
-                    <li><a href="#" data-section="tabela">Tabela</a></li>
-                    <li><a href="#" data-section="formulario">Formulário</a></li>
-                </ul>
-            </nav>
-			<h1>Aparecida Nutrição</h1>
+            <h1>Aparecida Nutrição</h1>
         </div>
     </header>
     <main>
         <section id="tabela" class="container">
-            <h2>Meus pacientes</h2>
-			<div class="grupo">
-				<label for="peso">Filtro:</label>
-				<input id="filtro" name="filtro" type="text" placeholder="Digite o nome do paciente que deseja filtrar" class="campo campo-medio">
-			</div>
+            <div class="titulo-container">
+                <h2 id="titulo-form">Lista de pacientes</h2>
+                <button id="novo-paciente" class="botao bto-principal">Novo</button>
+            </div>
+            <div class="grupo">
+                <label for="peso">Filtro:</label>
+                <input id="filtro" name="filtro" type="text" placeholder="Digite o nome do paciente que deseja filtrar" class="campo campo-medio">
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -37,58 +34,16 @@
                         <th>Altura(m)</th>
                         <th>Gordura Corporal(%)</th>
                         <th>IMC</th>
-						<th>Ações</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody id="tabela-pacientes">
-                    <tr class="paciente">
-                        <td class="info-nome">Paulo</td>
-                        <td class="info-peso">200</td>
-                        <td class="info-altura">2.4</td>
-                        <td class="info-gordura">10</td>
-                        <td class="info-imc">0</td>
-						<td class="acoes">
-							<button class="editar"><i class="fas fa-edit"></i></button>
-							<button class="excluir"><i class="fas fa-trash"></i></button>
-						</td>
-                    </tr>
                 </tbody>
             </table>
-			<button id="buscar" class="botao bto-principal">Buscar</button>
-        </section>
-        <section id="formulario" class="container-form hidden">
-            <h2 id="titulo-form">Adicionar novo paciente</h2>
-            <form id="form-adiciona">
-                <div class="grupo-grande">
-                    <label for="nome">Nome:</label>
-                    <input id="nome" name="nome" type="text" placeholder="Digite o nome do paciente" class="campo">
-                    <span class="error-message" id="error-message-nome"></span>
-                </div>
-                <div class="grupo">
-                    <label for="peso">Peso:</label>
-                    <input id="peso" name="peso" type="text" placeholder="Digite o peso do paciente" class="campo campo-medio">
-                    <span class="error-message" id="error-message-peso"></span>
-                </div>
-                <div class="grupo">
-                    <label for="altura">Altura:</label>
-                    <input id="altura" name="altura" type="text" placeholder="Digite a altura do paciente" class="campo campo-medio">
-                    <span class="error-message" id="error-message-altura"></span>
-                </div>
-                <div class="grupo">
-                    <label for="gordura">% de Gordura:</label>
-                    <input id="gordura" name="gordura" type="text" placeholder="Digite a porcentagem de gordura do paciente" class="campo campo-medio">
-                    <span class="error-message" id="error-message-gordura"></span>
-                </div>
-                <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
-            </form>
+            <button id="buscar" class="botao bto-principal">Buscar</button>
         </section>
     </main>
-
-    <script src="js/calcula-imc.js"></script>
-    <script src="js/form.js"></script>
-    <script src="js/menu.js"></script>
-	<script src="js/edicao-exclusao.js"></script>
-	<script src="js/filtra.js"></script>
-	<script src="js/busca-dados.js"></script>
+    <script src="js/filtra.js"></script>
+    <script src="js/tabela.js"></script>
 </body>
 </html>

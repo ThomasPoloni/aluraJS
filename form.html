@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparecida Nutrição - Cadastro</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <h1>Aparecida Nutrição</h1>
+        </div>
+    </header>
+    <main>
+        <section id="formulario" class="container-form">
+            <div class="titulo-container">
+                <h2 id="titulo-form">Adicionar novo paciente</h2>
+            </div>
+            <form id="form-adiciona">
+                <div class="grupo-grande">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="Digite o nome do paciente" class="campo">
+                    <span class="error-message" id="error-message-nome"></span>
+                </div>
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input id="peso" name="peso" type="text" placeholder="Digite o peso do paciente" class="campo campo-medio">
+                    <span class="error-message" id="error-message-peso"></span>
+                </div>
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input id="altura" name="altura" type="text" placeholder="Digite a altura do paciente" class="campo campo-medio">
+                    <span class="error-message" id="error-message-altura"></span>
+                </div>
+                <div class="grupo">
+                    <label for="gordura">% de Gordura:</label>
+                    <input id="gordura" name="gordura" type="text" placeholder="Digite a porcentagem de gordura do paciente" class="campo campo-medio">
+                    <span class="error-message" id="error-message-gordura"></span>
+                </div>
+                <div class="botao-container">
+                    <button id="cancelar" class="botao bto-secundario" type="button">Cancelar</button>
+                    <button id="adicionar-paciente" class="botao bto-principal" type="button">Adicionar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+</html>
